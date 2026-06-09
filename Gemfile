@@ -8,4 +8,6 @@ group :jekyll_plugins do
   gem 'jekyll-paginate', '~> 1.1.0'
   gem 'jekyll-seo-tag', '~> 2.7.1'
   gem 'jekyll-sitemap', '~> 1.4.0'
+  gem "tzinfo", "~> 2.0"
+  gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end

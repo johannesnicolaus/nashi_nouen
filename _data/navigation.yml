@@ -1,24 +1,15 @@
-- name: Pricing
-  link: /pricing/
-  new_window: false
-  highlight: false
-- name: Blog
+- name: 最新情報
   link: /blog/
   new_window: false
   highlight: false
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: Contact
+- name: アクセス
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: /
-  new_window: true
+- name: 当園の梨狩り
+  link: /pricing/
+  new_window: false
   highlight: false
-- name: Sign Up
+- name: WEB予約
   link: /
-  new_window: true
   highlight: true
