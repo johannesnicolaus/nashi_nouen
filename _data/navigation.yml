@@ -6,6 +6,10 @@
   link: /contact/
   new_window: false
   highlight: false
+- name: インスタグラム
+  link: https://www.instagram.com/tomo.chan_farm
+  new_window: true
+  highlight: false
 # - name: 当園の梨狩り
 #   link: /pricing/
 #   new_window: false
