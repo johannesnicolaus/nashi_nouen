@@ -7,12 +7,12 @@
     link: /contact/
     new_window: false
     highlight: false
-  - name: 当園の梨狩り
-    link: /pricing/
-    new_window: false
-    highlight: false
-  - name: WEB予約
-    link: /
+  # - name: 当園の梨狩り
+  #   link: /pricing/
+  #   new_window: false
+  #   highlight: false
+  - name: 梨狩り予約
+    link: /reservation/
     highlight: true
 - links:
   - name: Instagram
