@@ -43,17 +43,21 @@ faq:
 <div style="text-align: center;"><h1>予約</h1></div>
 
 
-<script src="https://www.supersaas.jp/widget/widget.js"></script>
-<script>
-  new SuperSaaS("nico_test_acc", "test_schedule", {
-    "widget_type": "button",
-    btn_label: "Book Now",
-    btn_style: "color:blue"
-  });
-</script>
+<div class="supersaas-widget-container">
+	<script src="https://www.supersaas.jp/widget/widget.js"></script>
+	<script>
+	  new SuperSaaS("nico_test_acc", "test_schedule", {
+	    "widget_type": "button",
+	    btn_label: "Book Now",
+	    btn_style: "color:blue"
+	  });
+	</script>
 
-<script src="https://cdn.supersaas.net/widget.js"></script>
-<script class="supersaas-widget">var supersaas = new SuperSaaS("630524:nico_test_acc","837456:test_schedule",{"widget_type":"frame"})</script>
+	<script src="https://cdn.supersaas.net/widget.js"></script>
+	<script class="supersaas-widget">var supersaas = new SuperSaaS("630524:nico_test_acc","837456:test_schedule",{"widget_type":"frame"})</script>
+	
+	<div class="widget-overlay"></div>
+</div>
 
 {% if page.faq %}
 	<h2>FAQ</h2>

@@ -69,3 +69,17 @@
 
 	}
 }
+
+.supersaas-widget-container {
+	position: relative;
+
+	.widget-overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 40px;
+		background: white;
+		pointer-events: none;
+	}
+}
