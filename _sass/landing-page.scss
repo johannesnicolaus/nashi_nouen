@@ -34,12 +34,67 @@
 .hero {
 	color: #ffffff;
 	text-align: center;
-	background: linear-gradient(to bottom, $middle-gradient-color 0%, $secondary-brand-color 100%) no-repeat #a05fb7;
-	padding-top: 50px;
+	position: relative;
+	overflow: hidden;
+	min-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.slideshow-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.slide {
+		display: none;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0;
+		}
+	}
+
+	.fade {
+		animation: fade 1s ease-in-out;
+	}
+
+	.text-container {
+		position: relative;
+		z-index: 2;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		background: rgba(0, 0, 0, 0.3);
+		padding: 40px 20px;
+		border-radius: 8px;
+
+		h1 {
+			color: #fff;
+			margin: 0;
+			font-size: 2.5em;
+		}
+
+		p {
+			color: #fff;
+			margin: 10px 0 0 0;
+		}
+	}
 
 	p {
 		color: #fff;
 	}
+}
+
+@keyframes fade {
+	from { opacity: 0.4 }
+	to { opacity: 1 }
 }
 
 
