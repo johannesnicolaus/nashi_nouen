@@ -2,7 +2,7 @@ backend:
   name: github
   repo: johannesnicolaus/nashi_nouen
   branch: main
-  base_url: https://sveltia-cms-auth.johannes-nicolaus.workers.dev
+  base_url: https://sveltia-cms-auth-2.johannes-nicolaus.workers.dev
   app_id: Ov23lirchIf3p87azTMi
 
 media_folder: /images
