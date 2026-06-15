@@ -27,13 +27,13 @@ collections:
       - { label: Position, name: position, widget: string, required: false }
       - { label: Bio, name: body, widget: markdown }
 
-  - name: pricing
-    label: Pricing
-    label_singular: Pricing
+  - name: reservation
+    label: Reservation
+    label_singular: Reservation
     files:
-      - name: pricing
-        label: Pricing Page
-        file: pricing.html
+      - name: reservation
+        label: Reservation Page
+        file: reservation.html
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Heading, name: heading, widget: string, required: false }
@@ -56,3 +56,46 @@ collections:
             fields:
               - { label: Question, name: question, widget: string }
               - { label: Answer, name: answer, widget: string }
+          - { label: Body, name: body, widget: hidden }
+
+  - name: homepage
+    label: Homepage
+    label_singular: Homepage
+    files:
+      - name: homepage
+        label: Homepage
+        file: index.html
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: string }
+          - label: Hero Section
+            name: hero
+            widget: object
+            fields:
+              - { label: Main Title, name: h1, widget: string }
+              - { label: Subtitle, name: subtext, widget: string }
+          - label: About Section
+            name: about
+            widget: object
+            fields:
+              - { label: Heading, name: h2, widget: string }
+              - { label: Description, name: p, widget: text }
+          - label: Experience Section
+            name: experience
+            widget: object
+            fields:
+              - { label: Heading, name: h2, widget: string }
+              - { label: Description, name: p, widget: text }
+          - label: Vegetables Section
+            name: vegetables
+            widget: object
+            fields:
+              - { label: Heading, name: h2, widget: string }
+              - { label: Description, name: p, widget: text }
+          - label: Testimonial Section
+            name: testimonial
+            widget: object
+            fields:
+              - { label: Quote, name: quote, widget: text }
+              - { label: Author, name: author, widget: string }
+          - { label: CTA Heading, name: cta_heading, widget: string }
