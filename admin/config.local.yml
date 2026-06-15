@@ -1,0 +1,25 @@
+backend:
+  name: test
+
+media_folder: /images
+public_folder: /images
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: _posts
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", type: date, required: true }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: staff_members
+    label: Staff Members
+    label_singular: Staff Member
+    folder: _staff_members
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Image, name: image, widget: image }
+      - { label: Position, name: position, widget: string, required: false }
+      - { label: Bio, name: body, widget: markdown }

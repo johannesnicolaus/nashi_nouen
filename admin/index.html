@@ -6,6 +6,15 @@
     <title>Sveltia CMS</title>
   </head>
   <body>
-    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <script type="module">
+      // Determine config based on environment
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const configFile = isLocal ? '/admin/config.local.yml' : '/admin/config.yml';
+
+      // Load the appropriate config
+      const script = document.createElement('script');
+      script.src = 'https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js';
+      document.body.appendChild(script);
+    </script>
   </body>
 </html>

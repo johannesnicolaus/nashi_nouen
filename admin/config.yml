@@ -26,3 +26,33 @@ collections:
       - { label: Image, name: image, widget: image }
       - { label: Position, name: position, widget: string, required: false }
       - { label: Bio, name: body, widget: markdown }
+
+  - name: pricing
+    label: Pricing
+    label_singular: Pricing
+    files:
+      - name: pricing
+        label: Pricing Page
+        file: pricing.html
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Heading, name: heading, widget: string, required: false }
+          - { label: Description, name: description, widget: string }
+          - label: Pricing Table
+            name: pricing_table
+            widget: list
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Color, name: color, widget: color }
+              - label: Features
+                name: features
+                widget: list
+                fields:
+                  - { label: Text, name: text, widget: string }
+                  - { label: Highlight, name: highlight, widget: boolean, default: false }
+          - label: FAQ
+            name: faq
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: string }
