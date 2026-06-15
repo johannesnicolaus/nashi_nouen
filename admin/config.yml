@@ -2,7 +2,6 @@ backend:
   name: github
   repo: johannesnicolaus/nashi_nouen
   branch: main
-  auth_type: implicit
   app_id: Ov23lirchIf3p87azTMi
 
 media_folder: /images
