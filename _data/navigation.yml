@@ -10,10 +10,10 @@
   link: https://www.instagram.com/tomo.chan_farm
   new_window: true
   highlight: false
-# - name: 当園の梨狩り
+# - name: 当園のなし狩り
 #   link: /pricing/
 #   new_window: false
 #   highlight: false
-- name: 梨狩り予約
+- name: なし狩り予約
   link: /reservation/
   highlight: true
