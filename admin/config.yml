@@ -13,7 +13,8 @@ collections:
     label: Posts
     label_singular: Post
     folder: _posts
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{date | date('YYYY-MM-DD')}}-{{slug}}"
+    path: "{{date | date('YYYY-MM-DD')}}-{{slug}}"
     fields:
       - { label: Title, name: title, widget: string }
       - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD", type: date, required: true }
