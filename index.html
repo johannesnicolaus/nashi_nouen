@@ -80,6 +80,30 @@ description: 横浜のともちゃん農園の公式サイトです。新鮮な�
 		</div>
 	</section>
 
+	<section class="latest-posts">
+		<div class="container">
+			<h2 class="editable">最新情報</h2>
+			{% assign latest_posts = site.posts | slice: 0, 20 %}
+			{% if latest_posts.size > 0 %}
+				<div class="latest-posts-scroll">
+					<ul class="latest-posts-list">
+						{% for post in latest_posts %}
+							<li class="latest-post-item">
+								<h3><a href="{% include relative-src.html src=post.url %}">{{ post.title }}</a></h3>
+								{% include post-title.html post=post %}
+								<div class="post-content">
+									{{ post.excerpt }}
+								</div>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+			{% else %}
+				<p class="latest-posts-empty">現在、最新情報はありません。</p>
+			{% endif %}
+		</div>
+	</section>
+
 	<section class="testimonial">
 		<div class="container flex">
 			<div class="testimonial-block">
