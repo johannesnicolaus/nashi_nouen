@@ -1,8 +1,7 @@
 ---
 title: 次回浜なし販売予定
 date: 2026-08-09
-categories:
-  - 販売予定
+categories: []
 ---
 
 次回の浜なしの直売所販売は
