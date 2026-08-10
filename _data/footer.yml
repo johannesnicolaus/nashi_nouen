@@ -1,12 +1,12 @@
 - links:
-  - name: 最新情報
-    link: /blog/
-    new_window: false
-    highlight: false
-  - name: アクセス
-    link: /contact/
-    new_window: false
-    highlight: false
+  # - name: 最新情報
+  #   link: /blog/
+  #   new_window: false
+  #   highlight: false
+  # - name: アクセス
+  #   link: /contact/
+  #   new_window: false
+  #   highlight: false
   # - name: インスタグラム
   #   link: https://www.instagram.com/tomo.chan_farm
   #   new_window: true
@@ -15,11 +15,11 @@
   #   link: /pricing/
   #   new_window: false
   #   highlight: false
-  - name: 浜なしもぎ取り予約
-    link: /reservation/
-    highlight: true
-- links:
-  - name: Instagram
-    link: https://www.instagram.com/tomo.chan_farm
-    social_icon: Instagram
-    new_window: true
+  # - name: 浜なしもぎ取り予約
+  #   link: /reservation/
+  #   highlight: true
+# - links:
+#   - name: Instagram
+#     link: https://www.instagram.com/tomo.chan_farm
+#     social_icon: Instagram
+#     new_window: true
