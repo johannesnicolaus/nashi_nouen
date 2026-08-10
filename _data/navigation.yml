@@ -6,14 +6,14 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: インスタグラム
-  link: https://www.instagram.com/tomo.chan_farm
-  new_window: true
-  highlight: false
-# - name: 当園のなし狩り
+# - name: インスタグラム
+#   link: https://www.instagram.com/tomo.chan_farm
+#   new_window: true
+#   highlight: false
+# - name: 当園の浜なしもぎ取り
 #   link: /pricing/
 #   new_window: false
 #   highlight: false
-- name: なし狩り予約
+- name: もぎ取り予約
   link: /reservation/
   highlight: true
