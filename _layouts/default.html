@@ -34,7 +34,7 @@
 		  gtag('config', 'G-P9KXVD5X4N');
 		</script>
 	</head>
-	<body>
+	<body id="top">
 		<header>
 			<div class="container">
 				<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo_white.png" alt="ともちゃん農園" width="125" height="50" /></a></div>
@@ -42,6 +42,10 @@
 			</div>
 		</header>
 		{{ content }}
+		<a href="#top" class="top-button" aria-label="ページ上部へ戻る">
+			<span class="top-button-arrow" aria-hidden="true">↑</span>
+			<span class="top-button-text">TOP</span>
+		</a>
 		<footer>
 			<div class="container">
 				<p class="editor-link"><a href="cloudcannon:collections/_data/footer.yml" class="btn"><strong>&#9998;</strong> Edit footer</a></p>

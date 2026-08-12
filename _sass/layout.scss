@@ -55,6 +55,53 @@ header {
 	position: relative;
 }
 
+.top-button {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background: $brand-color;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, .25);
+	color: #fff;
+	font-size: .8em;
+	font-weight: 700;
+	letter-spacing: .04em;
+	text-decoration: none;
+	transition: background .2s ease-in-out, box-shadow .2s ease-in-out, transform .2s ease-in-out;
+
+	&:hover {
+		background: $middle-gradient-color;
+		box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+		color: #fff;
+		text-decoration: none;
+		transform: translateY(-4px);
+	}
+
+	.top-button-arrow {
+		font-size: 1.6em;
+		line-height: 1;
+	}
+
+	.top-button-text {
+		line-height: 1;
+	}
+
+	@media (max-width: 449px) {
+		right: 16px;
+		bottom: 16px;
+		width: 56px;
+		height: 56px;
+		font-size: .7em;
+	}
+}
+
 .screenshot{
 	max-width: 100%;
 	height: auto;
